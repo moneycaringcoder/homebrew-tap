@@ -5,21 +5,21 @@
 class GitstreamTui < Formula
   desc "Live GitHub activity feed TUI — watch repo events in your terminal"
   homepage "https://github.com/moneycaringcoder/gitstream-tui"
-  version "0.6.2"
+  version "0.6.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/moneycaringcoder/gitstream-tui/releases/download/v0.6.2/gitstream-tui_0.6.2_darwin_amd64.tar.gz"
-      sha256 "f5dcc1223b97da41963f01a7c4c25022829590239ecfee0832eedf17c4c2b9a1"
+      url "https://github.com/moneycaringcoder/gitstream-tui/releases/download/v0.6.3/gitstream-tui_0.6.3_darwin_amd64.tar.gz"
+      sha256 "e2ab0a3cfd65eed5221d2f5e59eb8c7e0a753b4fcfceabd3678bcedfba09f2dd"
 
       define_method(:install) do
         bin.install "gitstream"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/moneycaringcoder/gitstream-tui/releases/download/v0.6.2/gitstream-tui_0.6.2_darwin_arm64.tar.gz"
-      sha256 "d3a4f92b4a0b5b89bf41a3f417890465bfca5f477d94f63c82077faf7a846423"
+      url "https://github.com/moneycaringcoder/gitstream-tui/releases/download/v0.6.3/gitstream-tui_0.6.3_darwin_arm64.tar.gz"
+      sha256 "eda724694eb33f2dad494c3d9b82ddf9e96c3ef7dc997e6e067bbca0ee5519a2"
 
       define_method(:install) do
         bin.install "gitstream"
@@ -29,15 +29,15 @@ class GitstreamTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/moneycaringcoder/gitstream-tui/releases/download/v0.6.2/gitstream-tui_0.6.2_linux_amd64.tar.gz"
-      sha256 "93cc9e9d80fd1416c4a1c073fa629ce7aba6417ad4e1f241955cb3d9fcf119dd"
+      url "https://github.com/moneycaringcoder/gitstream-tui/releases/download/v0.6.3/gitstream-tui_0.6.3_linux_amd64.tar.gz"
+      sha256 "486deed009935796903448f45373d697dea68e5f808706a7913174836f1882db"
       define_method(:install) do
         bin.install "gitstream"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/moneycaringcoder/gitstream-tui/releases/download/v0.6.2/gitstream-tui_0.6.2_linux_arm64.tar.gz"
-      sha256 "b37bc43aff00b32696ff95c6fd49642c531fc7fb3b5f7db96b0ce4a4181e8513"
+      url "https://github.com/moneycaringcoder/gitstream-tui/releases/download/v0.6.3/gitstream-tui_0.6.3_linux_arm64.tar.gz"
+      sha256 "0a96c6e45a6409b1cdf2ac0318a85b8ae0f407a810bc5f765352627fd42bc7ef"
       define_method(:install) do
         bin.install "gitstream"
       end
