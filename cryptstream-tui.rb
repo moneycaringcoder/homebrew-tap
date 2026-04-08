@@ -5,21 +5,21 @@
 class CryptstreamTui < Formula
   desc "Live cryptocurrency ticker TUI — real-time Binance prices in your terminal"
   homepage "https://github.com/moneycaringcoder/cryptstream-tui"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/moneycaringcoder/cryptstream-tui/releases/download/v0.4.0/cryptstream-tui_0.4.0_darwin_amd64.tar.gz"
-      sha256 "3e8b03ebd48a540b14c19cfaab5d3b2b3b420bc1495b7933817922a6d4fb51e0"
+      url "https://github.com/moneycaringcoder/cryptstream-tui/releases/download/v0.5.0/cryptstream-tui_0.5.0_darwin_amd64.tar.gz"
+      sha256 "d073d1015b9702d00ce35cab3427e8453c2e317d1586f7e172d0905c0e639b3a"
 
       define_method(:install) do
         bin.install "cryptstream"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/moneycaringcoder/cryptstream-tui/releases/download/v0.4.0/cryptstream-tui_0.4.0_darwin_arm64.tar.gz"
-      sha256 "6dd3d26c2460e1297fe4d491be69d0fc0ad39b8c3ae6144ba25de4c0c07ba52e"
+      url "https://github.com/moneycaringcoder/cryptstream-tui/releases/download/v0.5.0/cryptstream-tui_0.5.0_darwin_arm64.tar.gz"
+      sha256 "b57a578a33753562928cc896ca5d98a493073ec2a34da011c4e1d30769d26573"
 
       define_method(:install) do
         bin.install "cryptstream"
@@ -29,15 +29,15 @@ class CryptstreamTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/moneycaringcoder/cryptstream-tui/releases/download/v0.4.0/cryptstream-tui_0.4.0_linux_amd64.tar.gz"
-      sha256 "f51d0b256b5d6d02c7e256d16e88291956e3795da997feeb3ef53de6bde3e711"
+      url "https://github.com/moneycaringcoder/cryptstream-tui/releases/download/v0.5.0/cryptstream-tui_0.5.0_linux_amd64.tar.gz"
+      sha256 "da3a02093fce33ac5d83e55bc3cc7ebb3c8c9effee9b853e2e7c0df7a1e4538e"
       define_method(:install) do
         bin.install "cryptstream"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/moneycaringcoder/cryptstream-tui/releases/download/v0.4.0/cryptstream-tui_0.4.0_linux_arm64.tar.gz"
-      sha256 "91bb93dfc0eec6ed8843eb9203b594bc7400a7d546cb865f8a225118e783d263"
+      url "https://github.com/moneycaringcoder/cryptstream-tui/releases/download/v0.5.0/cryptstream-tui_0.5.0_linux_arm64.tar.gz"
+      sha256 "2d4f2cd287896cdb3e1c016a41225adfa5508fb0d69b35ca31551be6f737ec7c"
       define_method(:install) do
         bin.install "cryptstream"
       end
