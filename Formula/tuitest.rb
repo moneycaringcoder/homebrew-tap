@@ -5,21 +5,21 @@
 class Tuitest < Formula
   desc "CLI runner for tuitest — the TUI testing framework in tuikit-go"
   homepage "https://github.com/moneycaringcoder/tuikit-go"
-  version "0.7.2"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/moneycaringcoder/tuikit-go/releases/download/v0.7.2/tuitest_0.7.2_darwin_amd64.tar.gz"
-      sha256 "5806a168b745fee7f3ebcc95a276ba249d128540278d8dd18ff10471e3c6e1e6"
+      url "https://github.com/moneycaringcoder/tuikit-go/releases/download/v0.8.0/tuitest_0.8.0_darwin_amd64.tar.gz"
+      sha256 "f429c9ef102c0a3f53b0013d868a38e5429efeeb39d7df762712a7e39e2fcd18"
 
       define_method(:install) do
         bin.install "tuitest"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/moneycaringcoder/tuikit-go/releases/download/v0.7.2/tuitest_0.7.2_darwin_arm64.tar.gz"
-      sha256 "a78d6985ac9049dc9f69a6af7c6bf282d3d828044e11d24595113d772b5fe1d3"
+      url "https://github.com/moneycaringcoder/tuikit-go/releases/download/v0.8.0/tuitest_0.8.0_darwin_arm64.tar.gz"
+      sha256 "a26c2fae0cbeb2c03dd1101f7dcfe706f113275bddb38b75911225a02626d580"
 
       define_method(:install) do
         bin.install "tuitest"
@@ -29,15 +29,15 @@ class Tuitest < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/moneycaringcoder/tuikit-go/releases/download/v0.7.2/tuitest_0.7.2_linux_amd64.tar.gz"
-      sha256 "f6fc8de4e1459284151ffb645176a044aa74fced3e9ed9236dd67ef205cdf2e0"
+      url "https://github.com/moneycaringcoder/tuikit-go/releases/download/v0.8.0/tuitest_0.8.0_linux_amd64.tar.gz"
+      sha256 "8b892933492891d5383fe0ee18e79a6c9130d692ac89a65814b1924e98ce8614"
       define_method(:install) do
         bin.install "tuitest"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/moneycaringcoder/tuikit-go/releases/download/v0.7.2/tuitest_0.7.2_linux_arm64.tar.gz"
-      sha256 "48f5c97a97bc11db14247b0bc02f4557bb15076892b5b0c30019a1aa8f851efc"
+      url "https://github.com/moneycaringcoder/tuikit-go/releases/download/v0.8.0/tuitest_0.8.0_linux_arm64.tar.gz"
+      sha256 "bd0db3a5fced8a58265581849b1ffb3a0c3cc83b0a3e6695abb751c99eaaa33e"
       define_method(:install) do
         bin.install "tuitest"
       end
