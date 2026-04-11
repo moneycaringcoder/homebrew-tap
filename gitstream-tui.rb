@@ -11,7 +11,7 @@ class GitstreamTui < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/moneycaringcoder/gitstream-tui/releases/download/v0.7.5/gitstream-tui_0.7.5_darwin_amd64.tar.gz"
-      sha256 "9d89afc6f16cab1965ebab41fc169a9b83dfc6f4516043f259f0a963247ebb28"
+      sha256 "4fbd1a37541e2a67289d48527ea5dd35317581d385c57da6a9245af3c4b8bde6"
 
       define_method(:install) do
         bin.install "gitstream"
@@ -19,7 +19,7 @@ class GitstreamTui < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/moneycaringcoder/gitstream-tui/releases/download/v0.7.5/gitstream-tui_0.7.5_darwin_arm64.tar.gz"
-      sha256 "db3eaeaaa0dbc3a0fd3dc3e769c18e522cf14fde1550f44b2883c4e54b49002c"
+      sha256 "990c8af64fdd49c6448a641ceca2594d6e0f452d110e3dc8f11e1d98e4a45299"
 
       define_method(:install) do
         bin.install "gitstream"
@@ -30,14 +30,14 @@ class GitstreamTui < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/moneycaringcoder/gitstream-tui/releases/download/v0.7.5/gitstream-tui_0.7.5_linux_amd64.tar.gz"
-      sha256 "73c18ebaef4653ba9a1a6ce253eb1a874239d6366dd5ad0e4aeeff9ecd0c87ed"
+      sha256 "fe655cdf161e4c9719d5594d530c6cafa7327f06f45aa525942b127673d82350"
       define_method(:install) do
         bin.install "gitstream"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/moneycaringcoder/gitstream-tui/releases/download/v0.7.5/gitstream-tui_0.7.5_linux_arm64.tar.gz"
-      sha256 "0e27f2a5019d53f63c401e6993be8cbfd438cbf36c2314f9d545a29532c7b39c"
+      sha256 "4f778a7384932bce1297dfa75ba9c3c0e83629c5119b18c0520d6420e76aa405"
       define_method(:install) do
         bin.install "gitstream"
       end
